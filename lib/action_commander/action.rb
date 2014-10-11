@@ -1,0 +1,34 @@
+require_relative 'named_callbacks'
+
+module ActionCommander
+  class Action
+    attr_reader :context
+
+    def initialize(context)
+      @callbacks = NamedCallbacks.new
+      @context = context
+      yield(@callbacks) if block_given?
+    end
+
+    def db_session
+      context.db_session
+    end
+
+    def success(*args)
+      callback(:success, *args)
+    end
+
+    def failure(*args)
+      callback(:failure, *args)
+    end
+
+    def validation(*args)
+      callback(:validation, *args)
+    end
+
+    def callback(name, *args)
+      @callbacks.call(name, *args)
+      args
+    end
+  end
+end
