@@ -4,7 +4,7 @@
 require './lib/action_commander/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "ActionCommander"
+  spec.name          = "action_commander"
   spec.version       = ActionCommander::VERSION
   spec.authors       = ["szymon"]
   spec.email         = ["s.kopciewski@gmail.com"]
