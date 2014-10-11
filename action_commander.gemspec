@@ -5,7 +5,7 @@ require './lib/action_commander/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "ActionCommander"
-  spec.version       = SimpleCounter::VERSION
+  spec.version       = ActionCommander::VERSION
   spec.authors       = ["szymon"]
   spec.email         = ["s.kopciewski@gmail.com"]
   spec.summary       = %q{Action template with callbacks support}
@@ -18,9 +18,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  #spec.add_runtime_dependency "log4r"
-  spec.add_development_dependency "bundler", "~> 1.5"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
+  spec.add_development_dependency "rspec-given"
 
 end

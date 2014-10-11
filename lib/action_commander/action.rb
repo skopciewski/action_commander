@@ -1,4 +1,4 @@
-require_relative 'named_callbacks'
+require'action_commander/named_callbacks'
 
 module ActionCommander
   class Action
