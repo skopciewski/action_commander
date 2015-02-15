@@ -10,10 +10,6 @@ module ActionCommander
       yield(@callbacks) if block_given?
     end
 
-    def db_session
-      context.db_session
-    end
-
     def success(*args)
       callback(:success, *args)
     end
