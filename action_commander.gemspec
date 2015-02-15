@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['s.kopciewski@gmail.com']
   spec.summary       = 'Action template with callbacks support'
   spec.description   = 'Action template with callbacks support'
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/skopciewski/action_commander'
   spec.license       = 'GPL'
 
   spec.files         = Dir.glob('{bin,lib}/**/*')
