@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.summary       = 'The action template with the callbacks support'
   spec.description   = 'The action template with the callbacks support'
   spec.homepage      = 'https://github.com/skopciewski/action_commander'
-  spec.license       = 'GPL'
+  spec.license       = 'GPL-3.0'
 
   spec.files         = Dir.glob('{bin,lib}/**/*')
   spec.files        << %w(Gemfile LICENSE README.md CHANGELOG.md)
