@@ -1,3 +1,7 @@
+=== 1.0.8 (2015.02.16)
+
+* license update
+
 === 1.0.3 to 1.0.7 (2015.02.16)
 
 * update documentation, versions
