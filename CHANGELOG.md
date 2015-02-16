@@ -1,3 +1,7 @@
+=== 1.0.3 to 1.0.7 (2015.02.16)
+
+* update documentation, versions
+
 === 1.0.2 (2015.02.16)
 
 * update documentation
