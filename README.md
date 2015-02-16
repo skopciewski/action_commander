@@ -1,5 +1,7 @@
 # ActionCommander
 
+[![Gem Version](https://badge.fury.io/rb/action_commander.svg)](http://badge.fury.io/rb/action_commander)
+
 Solution based on the [jimweirich/wyriki][jww].  
 This pattern is useful, when you need to separate an interface from a business logic.
 
