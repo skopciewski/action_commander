@@ -1,3 +1,7 @@
+=== 1.0.9 (2015.03.06)
+
+* dockerflow update
+
 === 1.0.8 (2015.02.16)
 
 * license update
