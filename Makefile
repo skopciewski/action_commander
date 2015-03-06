@@ -1,14 +1,6 @@
-NAME=$$(basename $$(pwd))
-
 run:
-	docker run \
-		-i -t --rm \
-		-v $$(pwd):/opt/project/code \
-		$(NAME) \
-		bash
+	docker-compose up -d
+	docker-compose run dev bash
+	docker-compose stop
 
-build:
-	-docker rmi $(NAME)
-	docker build --rm -t $(NAME) .
-
-.PHONY: build run
+.PHONY: run
