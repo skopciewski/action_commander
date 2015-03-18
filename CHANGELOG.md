@@ -1,3 +1,7 @@
+=== 1.0.10 (2015.03.18)
+
+* texts fixes
+
 === 1.0.9 (2015.03.06)
 
 * dockerflow update
