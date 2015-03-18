@@ -18,5 +18,5 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 module ActionCommander
-  VERSION = '1.0.9'
+  VERSION = '1.0.10'
 end

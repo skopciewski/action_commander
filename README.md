@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/action_commander.svg)](http://badge.fury.io/rb/action_commander)
 
-Solution based on the [jimweirich/wyriki][jww].  
+Solution based on the [jimweirich/wyriki][jww].
 This pattern is useful, when you need to separate an interface from a business logic.
 
 ## Installation
@@ -29,7 +29,7 @@ require 'action_commander/action'
 class SomeAction < ActionCommander::Action
   def run(args)
     # do some things, collect params...
-    # you can inject some dependencies, just use `context` 
+    # you can inject some dependencies, just use `context`
     context.database_session_from_controller.do_something
     # if everything is ok, pass the result to the 'success' callback
     if ok
@@ -47,7 +47,7 @@ and then you can use it in the controller:
 
 ```ruby
 class SomeController
-  
+
   attr_reader :database_session_from_controller
 
   def initialize
@@ -58,7 +58,7 @@ class SomeController
     # handle input ...
     run_helper(SomeAction, imput_param1) do |on|
       on.success do |param1, param2|
-        # ...actions when success... 
+        # ...actions when success...
       end
       on.failure do |msg|
         # ...display the error msg ... or something...
@@ -66,7 +66,7 @@ class SomeController
     end
   end
 
-  private 
+  private
 
   def run_helper(action_class, *args, &block)
     # `self` - the context which is injected to the action
@@ -74,6 +74,10 @@ class SomeController
   end
 end
 ```
+
+## Versioning
+
+See [semver.org][semver]
 
 ## Contributing
 
@@ -83,4 +87,5 @@ end
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-[jww]: https://github.com/jimweirich/wyriki 
+[jww]: https://github.com/jimweirich/wyriki
+[semver]: http://semver.org/
