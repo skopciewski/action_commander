@@ -1,4 +1,4 @@
-FROM skopciewski/arch_ruby:2.2-dev
+FROM skopciewski/ruby-dev
 
 ENV BUNDLE_WITHOUT=""
 
@@ -8,4 +8,4 @@ COPY . /opt/project/code
 
 RUN bundle install
 
-CMD bash
+CMD sh
