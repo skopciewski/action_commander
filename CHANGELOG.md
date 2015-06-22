@@ -1,3 +1,7 @@
+=== 1.0.12
+
+* dockerfiles update
+
 === 1.0.10 to 1.0.11 (2015.03.18)
 
 * texts fixes
