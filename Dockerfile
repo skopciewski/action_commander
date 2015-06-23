@@ -1,11 +1,3 @@
-FROM skopciewski/ruby-dev
+FROM skopciewski/gem-dev:onbuild
 
-ENV BUNDLE_WITHOUT=""
-
-# install project
-WORKDIR /opt/project/code
-COPY . /opt/project/code
-
-RUN bundle install
-
-CMD sh
+CMD ["sh"]
