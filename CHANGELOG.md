@@ -1,4 +1,8 @@
-=== 1.0.12
+=== 1.0.13 (2015.06.23)
+
+* cleaning dockerfile
+
+=== 1.0.12 (2015.06.22)
 
 * dockerfiles update
 

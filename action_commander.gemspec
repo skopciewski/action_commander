@@ -1,6 +1,10 @@
 # coding: utf-8
 
-require './lib/action_commander/version'
+begin
+  require './lib/action_commander/version'
+rescue LoadError
+  module ActionCommander; VERSION = '0'; end
+end
 
 Gem::Specification.new do |spec|
   spec.name          = 'action_commander'
