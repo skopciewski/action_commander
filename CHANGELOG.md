@@ -1,3 +1,7 @@
+=== 1.0.14 (2015.07.17)
+
+* docker ref
+
 === 1.0.13 (2015.06.23)
 
 * cleaning dockerfile
