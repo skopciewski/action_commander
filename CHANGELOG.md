@@ -1,3 +1,7 @@
+### 1.0.16 (2017.04.07)
+
+* fix rakefile
+
 ### 1.0.15 (2017.04.07)
 
 * travis integration
