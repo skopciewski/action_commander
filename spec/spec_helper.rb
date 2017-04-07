@@ -1,5 +1,11 @@
-require 'rspec'
-require 'rspec/given'
+# frozen_string_literal: true
+require "simplecov"
+SimpleCov.start do
+  add_filter "test"
+end
+
+require "rspec"
+require "rspec/given"
 
 RSpec.configure do |config|
   config.expect_with :rspec do |c|

@@ -1,6 +1,8 @@
 # ActionCommander
 
 [![Gem Version](https://badge.fury.io/rb/action_commander.svg)](http://badge.fury.io/rb/action_commander)
+[![Code Climate](https://codeclimate.com/github/skopciewski/action_commander/badges/gpa.svg)](https://codeclimate.com/github/skopciewski/action_commander)
+[![Dependency Status](https://gemnasium.com/badges/github.com/skopciewski/action_commander.svg)](https://gemnasium.com/github.com/skopciewski/action_commander)
 
 Solution based on the [jimweirich/wyriki][jww].
 This pattern is useful, when you need to separate an interface from a business logic.
